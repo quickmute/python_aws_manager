@@ -32,9 +32,7 @@ def main(argv):
         profile = "default"
     if (region == None):
         region = "us-east-1"
-    print('Username: ' + username)
-    print('Profile: ' + profile)
-    print('Region: ' + region)
+    
     user = iam_user(username=username, profile_name=profile, region_name=region)
     user.show_resources()
 
